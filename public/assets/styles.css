@@ -1,0 +1,67 @@
+/* color palette source: https://colorhunt.co/palette/125b50f8b400faf5e4ff6363 */
+body {
+  background: #125b50;
+  font-family: arial;
+  color: #faf5e4;
+}
+
+#todo-table {
+  position: relative;
+  width: 95%;
+  background: #f8b400;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#todo-table form {
+  display: flex;
+}
+
+input[type='text'] {
+  width: 70%;
+  padding: 20px;
+  background: #faf5e4;
+  border: 0;
+  float: left;
+  font-size: 20px;
+  color: #989898;
+}
+
+button {
+  padding: 20px;
+  width: 30%;
+  background: #ff6363;
+  border: 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: arial;
+  font-size: 20px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+li:hover {
+  text-decoration: line-through;
+  background: rgba(255, 99, 99, 0.2);
+}
+
+h1 {
+  background: url(/assets/logoipsum-211.svg) no-repeat center;
+  margin-bottom: 1%;
+  text-indent: -10000px;
+}

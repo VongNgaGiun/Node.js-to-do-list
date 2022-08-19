@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>to-do list</title>
+    <!-- jQuery CDN -->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <!-- style.css is going to work because of middleware 'express.static('./public')', so whenever we type a URL like that and make a request then it's going to fire that middleware and it's going to look for that file in the public folder. -->
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <h1>My Todo List</h1>
+    <div id="todo-table">
+      <form method="post">
+        <input type="text" name="item" placeholder="新增事項" required />
+        <button type="submit">新增</button>
+      </form>
+      <ul>
+        <!-- dynamically inject the dummy data -->
+        <% for(var i=0; i < todos.length; i++){ %>
+        <li><%= todos[i].item %></li>
+        <% } %>
+      </ul>
+    </div>
+    <script src="assets/todo-list.js"></script>
+  </body>
+</html>
